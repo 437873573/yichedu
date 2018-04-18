@@ -1,0 +1,57 @@
+$btnColor:#F5535A;
+$botherColor:#b7b7b7;
+$textColor:#969696;
+$titleColor:#3D3D3D;
+$titleSize: .4rem;
+$textSize: .22rem;
+$smSize:.16rem;
+
+
+@mixin clearfix {
+  &:after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow: hidden;
+  }
+}
+
+%clearfix {
+  @include clearfix;
+}
+
+%ellipsis {
+  box-sizing: border-box;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  word-wrap: break-word;
+  overflow: hidden;
+}
+%between{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+%around{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+%center{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+%start{
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+%poCenter{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+}

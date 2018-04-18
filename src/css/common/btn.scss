@@ -1,0 +1,17 @@
+.btn{
+  display: block;
+  height:.94rem;
+  border-radius: .1rem;
+  background: $btnColor;
+  text-align: center;
+  line-height: .94rem;
+  color: white;
+  font-size: .28rem;
+}
+.btn.circle{
+  display: inline-block;
+  padding: 0 .48rem;
+  height:.6rem;
+  line-height: .6rem;
+  border-radius: 1rem;
+}
