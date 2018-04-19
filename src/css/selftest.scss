@@ -3,10 +3,18 @@
 @import "./common/arrow";
 @import "./common/btn";
 @import "./module/sprite-common";
+body{
+  padding-top: .78rem;
+}
 nav {
+  width: 100%;
   height: .78rem;
   background: $btnColor;
   padding: .12rem 0;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 10;
   ul li {
     flex-grow: 1;
     border-right: .04rem solid #fff;
@@ -60,7 +68,7 @@ h1, h5 {
 }
 
 .factor-lists li, .teachers-lists li {
-  border: .01rem solid #ccc;
+  border: 1px solid #ccc;
   width: 3.4rem;
   height: 2.7rem;
   margin-bottom: .12rem;
@@ -74,10 +82,13 @@ h1, h5 {
 
 form {
   margin: .4rem 0;
+  input{
+    font-size: $textSize;
+  }
 }
 
 label {
-  border: .01rem solid $botherColor;
+  border: 1px solid $botherColor;
   border-radius: .1rem;
   padding: .34rem;
   font-size: .28rem;
@@ -97,10 +108,10 @@ label {
     margin-right: .1rem;
   }
   i.name {
-    background-image: url("/img/name.jpg");
+    background-image: url("../img/name.jpg");
   }
   i.phone {
-    background-image: url("/img/phone.png");
+    background-image: url("../img/phone.png");
   }
 }
 
@@ -113,7 +124,7 @@ label {
     img {
       width:5rem;
       height: 3rem;
-      border: .01rem solid #ccc;
+      border: 1px solid #ccc;
       padding: 0.12rem;
     }
     ul {
@@ -139,7 +150,7 @@ label {
       width: .24rem;
       height: .06rem;
       background: white;
-      border: .01rem solid #3D3D3D;
+      border: 1px solid #3D3D3D;
       border-radius: 0;
     }
     .swiper-pagination-bullet-active{
@@ -154,7 +165,7 @@ button{
   height:2.4rem;
   h4 {
     font-size: $textSize;
-    line-height: .3rem;
+    line-height: .32rem;
     text-align: left;
     margin: .1rem 0;
     > b {
@@ -177,8 +188,14 @@ button{
       background: $btnColor;
     }
   }
-  h4:last-of-type span {
-    font-weight: bold;
+  h4:last-of-type{
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    span {
+      font-weight: bold;
+    }
   }
   .btn{
     height:.6rem;
