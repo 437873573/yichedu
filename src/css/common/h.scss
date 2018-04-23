@@ -1,0 +1,32 @@
+.banner {
+  width: 100%;
+}
+
+section {
+  padding: .68rem .3rem 0;
+}
+
+h1 {
+  font-weight: bold;
+  font-size: $titleSize;
+  text-align: center;
+  line-height: 1.25;
+}
+
+h5 {
+  margin-top: .2rem;
+  text-align: center;
+  font-size: $smSize;
+  line-height: 1.25;
+}
+
+h1, h5 {
+  a {
+    display: inline-block;
+    vertical-align: baseline;
+  }
+  span {
+    color: $themeColor;
+    vertical-align: baseline;
+  }
+}

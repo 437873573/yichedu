@@ -1,0 +1,46 @@
+form {
+  margin: .4rem 0;
+  input,select,textarea{
+    font-size: $textSize;
+  }
+  input[type='text'],select{
+    width: 4.8rem;
+  }
+  button{
+    width: 100%;
+  }
+}
+
+label {
+  border: 1px solid $botherColor;
+  border-radius: .1rem;
+  padding: .34rem;
+  font-size: .28rem;
+  color: $textColor;
+  margin-bottom: .1rem;
+  @extend %start;
+  span {
+    display: flex;
+    align-items: center;
+  }
+  i {
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: .28rem;
+    height: .28rem;
+    display: inline-block;
+    margin-right: .1rem;
+  }
+  i.name {
+    background-image: url("../img/name.jpg");
+  }
+  i.phone {
+    background-image: url("../img/phone.png");
+  }
+  i.level{
+    background-image: url("../img/remote/remote_18.png");
+  }
+  i.set{
+    background-image: url("../img/remote/remote_55.png");
+  }
+}
