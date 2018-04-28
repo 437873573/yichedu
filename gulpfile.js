@@ -70,7 +70,10 @@ gulp.task('img', () =>
 );
 
 gulp.task('copy', () => gulp.src('src/js/lib/**/*.js')
-.pipe(gulp.dest('dist/js/lib')))
+.pipe(gulp.dest('dist/js/lib')));
+
+gulp.task('copy', () => gulp.src('src/components/*.html')
+    .pipe(gulp.dest('dist/components')));
 
 gulp.task('serve', ['sass', 'scripts', 'img', 'assemble', 'copy'], function () {
 

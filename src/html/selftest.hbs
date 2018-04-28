@@ -37,14 +37,8 @@ otherjs: swiper.min
         <h1>上班族也能上本科<br>火热招生中</h1>
         <h5>错过本次报考，可能将<span>延迟半年取证</span></h5>
         <form action="">
-            <label for="name">
-                <span><i class="name"></i>姓名：</span>
-                <input type="text" class="input" id="name" name="name" placeholder="输入您的真实姓名">
-            </label>
-            <label for="phone">
-                <span><i class="phone"></i>手机：</span>
-                <input type="text" class="input" id="phone" name="phone" placeholder="输入您的真实手机">
-            </label>
+            {{> name}}
+            {{> phone}}
             <button type="submit" class="btn">立即点击在线报名</button>
         </form>
         <h5>*领取<a><span>2018年招生简章</span></a></h5>
@@ -123,14 +117,8 @@ otherjs: swiper.min
     <section class="singUp">
         <h1>现在报名有优惠<br><span>最高1000元</span></h1>
         <form action="">
-            <label for="name">
-                <span><i class="name"></i>姓名：</span>
-                <input type="text" class="input" id="name" name="name" placeholder="输入您的真实姓名" maxlength="12">
-            </label>
-            <label for="phone">
-                <span><i class="phone"></i>手机：</span>
-                <input type="text" class="input" id="phone" name="phone" placeholder="输入您的真实手机" maxlength="11">
-            </label>
+            {{> name}}
+            {{> phone}}
             <button type="submit" class="btn">马上报名，享受优惠</button>
         </form>
     </section>

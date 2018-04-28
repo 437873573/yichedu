@@ -2,14 +2,19 @@ $themeColor: #F5535A;
 
 @import "./lib/mix";
 @import "./lib/base";
-@import "./common/arrow";
 @import "./common/btn";
 @import "./common/h";
 @import "./common/form";
 @import "./module/sprite-common";
 @import "./module/nav";
 @import "./module/footer";
-
+.arrow{
+  border:.3rem solid transparent;
+  border-top-color:#c8c8c8;
+  margin: .55rem auto 0;
+  width:0;
+  height:0;
+}
 .factor-lists, .teachers-lists {
   margin-top: .4rem;
   flex-wrap: wrap;
@@ -48,7 +53,6 @@ $themeColor: #F5535A;
       align-items: flex-start;
     }
     li {
-      line-height: .3rem;
       font-weight: bold;
       font-size: .2rem;
       span {
@@ -77,7 +81,6 @@ $themeColor: #F5535A;
   height: 2.4rem;
   h4 {
     font-size: $textSize;
-    line-height: .32rem;
     text-align: left;
     margin: .1rem 0;
     > b {
@@ -88,7 +91,6 @@ $themeColor: #F5535A;
       color: #fff;
       width: .24rem;
       height: .24rem;
-      line-height: .24rem;
       font-size: .18rem;
       text-align: center;
     }
